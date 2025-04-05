@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UGC</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+  <style>
+    
+  h1, h2, h3, h5 {
+    font-family: 'Great Vibes', cursive;
+  }
+
+
+    body {
+      background-color: rgb(245, 245, 175);
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+    }
+
+    .custom-carousel {
+      
+      margin: 20px auto;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+    h2{
+        justify-content: center;
+        text-align: center;
+    }
+    .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  .card {
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #000; 
+  color: white; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #000; 
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="c:\Users\LENOVO\Downloads\WhatsApp Image 2025-04-04 at 10.28.46 PM.jpeg" alt="UGC Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <!-- Events Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Events</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./party.html">Party</a></li>
+              <li><a class="dropdown-item" href="./wedding.html">Wedding</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="./conf.html">Conference</a></li>
+            </ul>
+          </li>
+
+          <!-- About Us -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About Us</a>
+          </li>
+
+          <!-- Book Now Dropdown -->
+          <li class="nav-item">
+            <a class="nav-link active" href="./booking4.html">Book Now</a>
+          </li>
+          
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="#ccc">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide custom-carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="c:\Users\LENOVO\Downloads\slide1.jfif" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          
+            <h3 style=" color:rgb(245, 245, 175)">Nature's Therapy</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\LENOVO\Downloads\slide2.jfif" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+            <h3 style=" color:rgb(245, 245, 175)">Suites amidst lush greenery</3>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\LENOVO\Downloads\slide3.jfif" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+            <h3
+            
+            style="color:rgb(245, 245, 175)">luxury at its finest</h3>
+          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <br>
+  <!--card-->
+  <h2 style="color: black; font-size: 50px;">Suites</h2>
+  <div class="card-container">
+  <div class="card" style="width: 18rem;">
+    <img src="c:\Users\LENOVO\Downloads\card1.jfif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Royal Suite</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">view</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="c:\Users\LENOVO\Downloads\card2.jfif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Jungle Suite</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">view</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="c:\Users\LENOVO\Downloads\card3.jfif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Sunset Suite</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">view</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="c:\Users\LENOVO\Downloads\card4.jfif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Premium Suite</h3>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">view</a>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Us Section -->
+<section style="background-color: #111; color: white; padding: 50px 0; margin-top: 50px;">
+  <div 
+  id="#ccc"
+  class="container text-center">
+    <h2 style="font-family: 'Great Vibes', cursive; font-size: 48px; margin-bottom: 30px; text-decoration: underline dotted;">Contact Us</h2>
+
+    <p style="font-size: 18px;">We'd love to hear from you!</p>
+
+    <!-- Email -->
+    <p style="font-size: 20px;">
+      📧 
+      <a href="mailto:yourmail@example.com" style="color: #ffc107; text-decoration: none;">ugc_resorts@gmail.com</a>
+    </p>
+
+    <!-- Social Icons -->
+    <div style="font-size: 30px; margin-top: 20px;">
+      <a href="https://www.instagram.com/urmilaa_green_county/?hl=en" target="_blank" style="color: #ffc107; margin: 0 15px;">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/people/Urmilaa-Green-County/100070572741540/" target="_blank" style="color: #ffc107; margin: 0 15px;">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank" style="color: #ffc107; margin: 0 15px;">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://wa.me/919881407579" target="_blank" style="color: #ffc107; margin: 0 15px;">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
